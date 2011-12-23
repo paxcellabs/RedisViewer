@@ -52,8 +52,9 @@ public class ConnectionSettingStorage {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(new File(
 					storageFile)));
-			System.out.println("Loaded Connections from " + new File (storageFile).getAbsolutePath());
-			//FileReader out = new FileReader(new File(storageFile));
+			System.out.println("Loaded Connections from "
+					+ new File(storageFile).getAbsolutePath());
+			// FileReader out = new FileReader(new File(storageFile));
 			String record = null;
 			while ((record = reader.readLine()) != null) {
 				String recordData[] = record.split(",");

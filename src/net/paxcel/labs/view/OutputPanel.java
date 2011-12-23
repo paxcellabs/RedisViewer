@@ -96,7 +96,7 @@ public class OutputPanel extends JPanel {
 				int width = 20;
 				col.setPreferredWidth(width);
 				col.setMaxWidth(width);
-				
+
 				JScrollPane p = new JScrollPane(list);
 				output.insertComponent(p);
 				output.setCaretPosition(0);

@@ -100,7 +100,7 @@ public class CommandPanel extends JPanel {
 				updateKeys();
 			}
 		});
-//		updateKeys();
+		// updateKeys();
 	}
 
 	private void updateKeys() {

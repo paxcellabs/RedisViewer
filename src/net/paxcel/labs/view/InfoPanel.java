@@ -3,9 +3,6 @@ package net.paxcel.labs.view;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Insets;
-import java.lang.management.ManagementFactory;
-import java.lang.management.ThreadInfo;
-import java.lang.management.ThreadMXBean;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;

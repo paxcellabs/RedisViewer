@@ -32,7 +32,7 @@ public class CommandExecutor {
 
 		public void run() {
 			while (true) {
-				if (CommandExecutor.this.commands.size() < 1){
+				if (CommandExecutor.this.commands.size() < 1) {
 					synchronized (CommandExecutor.this.commands) {
 						try {
 							CommandExecutor.this.commands.wait();

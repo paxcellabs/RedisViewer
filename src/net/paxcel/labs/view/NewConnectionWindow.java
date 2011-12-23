@@ -55,7 +55,7 @@ public class NewConnectionWindow extends JDialog {
 	private RedisClient client;
 
 	public NewConnectionWindow(RedisClient client) {
-		super (client.getFrame(), "Create New Connection", true);
+		super(client.getFrame(), "Create New Connection", true);
 		this.client = client;
 		ipLabel.setPreferredSize(new Dimension(100, 15));
 		portLabel.setPreferredSize(new Dimension(100, 15));

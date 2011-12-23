@@ -14,7 +14,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
 import javax.swing.KeyStroke;
-import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
 import net.paxcel.labs.beans.ConnectionDetail;
@@ -50,7 +49,7 @@ public class RedisClient {
 				client.dispose();
 			}
 		});
-		
+
 		connection.add(newConnection);
 		newConnection.setAccelerator(KeyStroke.getKeyStroke('N',
 				KeyEvent.CTRL_DOWN_MASK));

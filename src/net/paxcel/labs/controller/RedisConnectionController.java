@@ -4,11 +4,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import net.paxcel.labs.RedisException;
+import net.paxcel.labs.beans.ConnectionDetail;
+
 import org.apache.commons.pool.impl.GenericObjectPool;
 import org.apache.commons.pool.impl.GenericObjectPool.Config;
 
-import net.paxcel.labs.RedisException;
-import net.paxcel.labs.beans.ConnectionDetail;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.SortingParams;
@@ -100,7 +101,8 @@ public class RedisConnectionController {
 			connectionInfo.put(connection.getName(), info);
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new RedisException("Error adding connection - " + e.getMessage(), e);
+			throw new RedisException("Error adding connection - "
+					+ e.getMessage(), e);
 		}
 	}
 
